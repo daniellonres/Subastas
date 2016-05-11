@@ -1,0 +1,80 @@
+<!OCTYPE html>
+<html>
+<head>
+    <link type="text/css" href= "bower_components/bootstrap/dist/css/bootstrap.css" rel=stylesheet>
+    
+    <title>Registro</title>
+</head>
+    <head>
+<title>Color de Fondo de la página</title>
+<style type="text/css">
+body{
+	background:aquamarine;
+</style> 
+    </head>  
+    <header> 
+
+
+<body>
+    
+     <div class="page-header"><font face="Goudy Stout"> <h1><center>registro</center></h1></font></div>
+    
+    <p> Ingresa tus datos personales y así podras asceder al portal de subastas, sube lo que ya no utilices y ofertalo para ser subastado
+    </p> 
+    
+    </header>
+<div class="container">       
+<div id="formulario_registro"> 
+   
+    <form method="post" class="signin" action="registro.php">
+                <fieldset class="textbox"> 
+                <label class="username"> 
+                <span>Email</span> 
+                <input id="username" name="email" value="" type="text" autocomplete="on" placeholder="Usuario" required>
+                </label> 
+                 <label class="password"> 
+                <span>Contrase&ntilde;a</span> 
+                <input id="password" name="password" value="" type="password" placeholder="Contrase&ntilde;a" required>
+                </label> 
+                <input type="submit" id="go" value="Enviar">
+                 <input  type="button" id="cancel"value="Cancel" onClick="window.location.href='index.php'">
+                 
+                </fieldset> 
+    </form> 
+</div>
+</div> 
+
+<div class="container">      
+<div id="formulario">
+   <form role="form" action="php/contacto.php" method="POST" id="contacto" title="Nombre">
+   <label for="nombre">Nombre</label>
+   <input name="nombre" type="text" required="required" id="nombre" placeholder="nombre" tabindex="1" title="Nombre">
+   <br>
+   <label for="email">Email</label>
+   <input name="email" type="email" required="required" id="email" placeholder="email" tabindex="2" title="Email">
+   <br>
+   <label for="telefono">Teléfono</label>
+   <input name="telefono" type="text" id="telefono" placeholder="telefono" tabindex="3" title="Telefono">
+   <br>
+   <label for="ciudad">Ciudad</label>
+   <input name="ciudad" type="text" id="ciudad" placeholder="ciudad" tabindex="4" title="ciudad">
+   <br>
+   <label for="pais">País</label>
+   <input name="pais" type="pais" id="pais" placeholder="pais" tabindex="5" title="pais">
+   <br>
+   <label for="Mensaje">Mensaje</label>
+   <textarea name="mensaje" rows="4" id="mensaje" placeholder="mensaje" tabindex="6"></textarea>
+   <br>
+   <input type="submit" name="enviar" tabindex="7" value="Enviar"><input type="reset" tabindex="8" value="Borrar">
+   <input type="hidden" name="estado" value="1">
+   </form>
+  </div>
+</div>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    
+    
+    
+</body>
+    
+</html>
